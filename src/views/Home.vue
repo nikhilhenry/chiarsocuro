@@ -10,7 +10,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu" id="navItems" v-bind="{'is-active':isActive}">
+  <div class="navbar-menu" id="navItems" v-bind:class="{'is-active':isActive}">
     <div class="navbar-end">
       <a class="navbar-item" v-scroll-to="'#hero'">Home</a>
       <a class="navbar-item" v-scroll-to="'#events'">Events</a>
