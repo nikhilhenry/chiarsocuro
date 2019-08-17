@@ -122,6 +122,7 @@ export default {
           .then(()=>{
             this.$router.push('/about')
           })
+          // eslint-disable-next-line
           .catch(err=>{
             alert('Registration Failed. Please try again later')
           })
