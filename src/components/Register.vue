@@ -89,6 +89,8 @@
 </template>
 
 <script>
+import firebase from 'firebase'
+
 export default {
   name:'Register',
   props:['event_title'],
@@ -108,7 +110,21 @@ export default {
   methods:{
     submit:function(){
       if(this.student_name && this.student_email && this.student_grade && this.school_name && this.school_email && this.accepted){
-        this.$router.push('/about')
+        const student = {
+          student_name:this.student_name,
+          student_email:this.student_email,
+          student_grade:this.student_grade,
+          school_name:this.school_name,
+          school_email:this.school_email,
+          add_info:this.add_info,
+        };
+        firebase.firestore().collection(this.event_title).add(student)
+          .then(()=>{
+            this.$router.push('/about')
+          })
+          .catch(err=>{
+            alert('Registration Failed. Please try again later')
+          })
       }
       else{
         this.errors.push('Please fill the form completely')
