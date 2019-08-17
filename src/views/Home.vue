@@ -14,25 +14,28 @@
     <div class="navbar-end">
       <a class="navbar-item" v-scroll-to="'#hero'">Home</a>
       <a class="navbar-item" v-scroll-to="'#events'">Events</a>
-      <a class="navbar-item">Contact Us</a>
+      <a class="navbar-item" v-scroll-to="'footer'">Contact Us</a>
     </div>
   </div>
 </nav>
   </div>
   <Hero id="hero"/>
   <Events id="events"/>
+  <Footer id="footer"/>
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero'
 import Events from '@/components/Events'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'home',
   components: {
     Hero,
     Events,
+    Footer,
   },
   data(){
     return{
