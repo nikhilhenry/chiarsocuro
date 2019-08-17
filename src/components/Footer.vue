@@ -12,7 +12,7 @@
       <p class="address"><strong class="title is-5">Address: </strong> 6/1A, 6/2 Byrathi Village, Bidarahalli Hobli, Off Hennur-Bagalur Main Road (New, International Airport Link Road), Bengaluru, Karnataka 560077</p>
       </div>
       <!-- contact information -->
-      <div class="column has-text-right">
+      <div class="column has-text-right-tablet">
       <strong class="title is-3 is-spaced">Contact Us</strong>
       <div class="container">
         <ul>
@@ -42,11 +42,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$desktop: 700px;
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+
   .footer{
     margin-top:4rem!important;
     padding-bottom:10px;
     .address{
-      max-width: 40%;
+      @include desktop {
+        max-width: 40%;
+      }
     } 
   }
 </style>
