@@ -61,7 +61,7 @@
         <div class="field">
           <label class="label">Additional information</label>
           <div class="control">
-            <textarea class="textarea is-small" placeholder="Small textarea" v-model="add_info"></textarea>
+            <textarea class="textarea is-small" placeholder="Optional information such group or non-school participant " v-model="add_info"></textarea>
           </div>
         </div>
         <!-- terms and  conditions -->
