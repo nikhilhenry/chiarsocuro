@@ -13,9 +13,11 @@
         <div class="media-content">
          <div class="content">
            <p>
-             <strong>{{event.title}}</strong>
+             <strong class="title">{{event.title}}</strong>
              <br>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+           </p>
+           <p class="text has-text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget nullam non nisi est sit. Non blandit massa enim nec dui nunc mattis enim ut. Id diam maecenas ultricies mi eget mauris pharetra.
            </p>
         </div>
         <nav  class="level is-mobile">
@@ -49,3 +51,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.modal{
+  .text{
+    margin-bottom: 12px;
+  }
+}
+</style>
