@@ -1,7 +1,7 @@
 <template>
   <div class="home">
   <div>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <strong class="navbar-item">Chiaroscuro</strong>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navItems" v-on:click="navToggle" v-bind:class="{'is-active':isActive}">
@@ -12,15 +12,15 @@
   </div>
   <div class="navbar-menu" id="navItems" v-bind="{'is-active':isActive}">
     <div class="navbar-end">
-      <a class="navbar-item">Home</a>
-      <a class="navbar-item">Events</a>
+      <a class="navbar-item" v-scroll-to="'#hero'">Home</a>
+      <a class="navbar-item" v-scroll-to="'#events'">Events</a>
       <a class="navbar-item">Contact Us</a>
     </div>
   </div>
 </nav>
   </div>
-  <Hero/>
-  <Events/>
+  <Hero id="hero"/>
+  <Events id="events"/>
   </div>
 </template>
 
