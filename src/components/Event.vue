@@ -22,7 +22,6 @@
         </div>
         <nav  class="level is-mobile">
         <div class="level-left">
-          <a class="level-item" aria-label="details"><a class="button is-info">DETAILS</a></a>
           <a class="level-item" aria-label="details"><a class="button is-success" v-on:click="registerToggle">REGISTER</a></a>
         </div>
         </nav> 
