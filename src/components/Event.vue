@@ -23,7 +23,7 @@
         <nav  class="level is-mobile">
         <div class="level-left">
           <a class="level-item" aria-label="details"><a class="button is-info">DETAILS</a></a>
-          <a class="level-item" aria-label="details"><a class="button is-success">REGISTER</a></a>
+          <a class="level-item" aria-label="details"><a class="button is-success" v-on:click="registerToggle">REGISTER</a></a>
         </div>
         </nav> 
         </div>
@@ -32,21 +32,37 @@
   </div>
   <button class="modal-close is-large" aria-label="close" v-on:click="modalToggle"></button>
 </div>
+
+<!-- registration modal -->
+  <div class="modal" v-bind:class="{'is-active':isRegisterActive}">
+    <Register v-bind:event_title="event.title"/>
+    <button class="modal-close is-large" aria-label="close" v-on:click="registerToggle"></button>
+  </div>
 </div>
 </template>
 
 <script>
+import Register from '@/components/Register'
+
 export default {
   name:'Event',
   props:["event"],
+  components:{
+    Register
+  },
   data(){
     return{
-      isActive:false
+      isActive:false,
+      isRegisterActive:false,
     } 
   },
   methods:{
     modalToggle:function(){
       this.isActive=!this.isActive
+    },
+    registerToggle:function(){
+      this.isRegisterActive=!this.isRegisterActive
+      this.isActive=false
     }
   }
 }
