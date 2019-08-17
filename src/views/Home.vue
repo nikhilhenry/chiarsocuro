@@ -1,7 +1,7 @@
 <template>
   <div class="home">
   <div>
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <strong class="navbar-item">Chiaroscuro</strong>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navItems" v-on:click="navToggle" v-bind:class="{'is-active':isActive}">
@@ -58,5 +58,6 @@ export default {
         color: black;
       }
     }
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.212), 0 0 0 1px rgba(10,10,10,0.212);
   }
 </style>
