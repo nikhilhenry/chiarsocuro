@@ -13,7 +13,7 @@
       </div>
       <!-- contact information -->
       <div class="column has-text-right-tablet">
-      <strong class="title is-3 is-spaced">Contact Us</strong>
+      <strong class="title is-3 is-spaced">Contact</strong>
       <div class="container">
         <ul>
           <li class="subtitle is-5">Events Coordinator: <a href="mailto:events@lsb.edu.in">events@lsb.edu.in</a></li>
