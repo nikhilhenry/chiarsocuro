@@ -3,9 +3,9 @@
   <section class="hero is-fullheight">
     <div class="hero-body">
     <div class="container has-text-centered">
-      <p class="subtitle is-5-tablet is-size-7-mobile is-spaced">7th Annual Inter-school Art and Design Fesitival and Competitions</p>
-      <p class="title is-1-tablet">Chiaroscuro'19</p>
-      <p class="subtitle is-3-tablet">September 20</p>
+      <p class="subtitle is-5 is-size-7-mobile is-spaced">7th Annual Inter-school Art and Design Fesitival and Competitions</p>
+      <p class="title is-1">Chiaroscuro'19</p>
+      <p class="subtitle is-3">September 20</p>
     </div>
     </div>
   </section>
