@@ -6,8 +6,8 @@
       <div class="column is-one-thirds has-text-left">
       <strong class="title is-3">Follow us on social media</strong>
       <div class="container">
-      <span class="icon is-large"><a href="https://www.instagram.com/chiarsocuro"><i class="fab fa-instagram fa-2x"></i></a></span>
-      <span class="icon is-large"><a href="https://www.instagram.com/chiarsocuro"><i class="fab fa-facebook fa-2x"></i></a></span>
+      <span class="icon is-large"><a href="https://www.instagram.com/legacy_chiaroscuro/"><i class="fab fa-instagram fa-2x"></i></a></span>
+      <span class="icon is-large"><a href="https://www.facebook.com/LegacyChiaroscuro"><i class="fab fa-facebook fa-2x"></i></a></span>
       </div>
       <p class="address"><strong class="title is-5">Address: </strong> 6/1A, 6/2 Byrathi Village, Bidarahalli Hobli, Off Hennur-Bagalur Main Road (New, International Airport Link Road), Bengaluru, Karnataka 560077</p>
       </div>
