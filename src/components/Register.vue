@@ -9,9 +9,9 @@
       <p class="title">Registration</p>
       <p class="subtitle">{{event_title}}</p>
       <!-- errors -->
-      <p v-if="errors.length">
+      <div v-if="errors.length">
         <p v-bind:key="error" v-for="error in errors" class="has-background-danger has-text-white has-text-weight-semibold">{{error}}</p>
-      </p>
+      </div>
       <form
       @submit="submit">
         <!-- Full name -->
@@ -102,13 +102,12 @@ export default {
       school_email:null,
       add_info:null,
       accepted:false,
+      event:this.event_title,
     }
   },
   methods:{
-    submit:function(e){
+    submit:function(){
       if(this.student_name && this.student_email && this.student_grade && this.school_name && this.school_email && this.accepted){
-        console.log("success");
-        console.log(this.student_name)
         this.$router.push('/about')
       }
       else{
