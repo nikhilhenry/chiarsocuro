@@ -52,6 +52,13 @@
             <input class="input" type="email" placeholder="eg. school@example.com">
           </div>
         </div>
+        <!-- addition information -->
+        <div class="field">
+          <label class="label">Additional information</label>
+          <div class="control">
+            <textarea class="textarea is-small" placeholder="Small textarea"></textarea>
+          </div>
+        </div>
         <!-- terms and  conditions -->
         <div class="field">
           <div class="control">
