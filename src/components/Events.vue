@@ -36,7 +36,13 @@ export default {
       events1:[
         {
           title:'Comic Design',
-          image:require('../assets/comic_design.png')
+          image:require('../assets/comic_design.png'),
+          num_particapants:'3-4',
+          age:'grade 6-8',
+          duration:'2 - 3 hours',
+          mat_prov:'',
+          mat_brought:'',
+          details:''
         },
         {
           title:'Culinary Art',
