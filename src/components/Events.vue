@@ -3,7 +3,9 @@
     <section class="events">
     <div class="container is-fluid has-text-centered">
       <h1 class="title is-1">Events</h1>
-      <p class="subtitle is-6 has-text-weight-light"><i>**Note registration closes on 10 September**</i></p>
+      <p class="subtitle is-6 has-text-weight-light"><i>**Note registration closes on 10th September 2019**</i></p>
+      <p>*Competition participant Fee: INR 600(includes breakfast,lunch and workshop)*</p>
+      <p>*School Registration Fee: INR 1500 (includes breakfast and lunch for a maximum of 3 acompanying faculty members)*</p>
       <div class="_events">
       <!-- first row -->
       <div class="columns">

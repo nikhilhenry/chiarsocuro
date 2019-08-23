@@ -16,26 +16,26 @@
       @submit="submit">
         <!-- Full name -->
         <div class="field">
-          <label class="label">Full Name</label>
+          <label class="label">Name of participant</label>
           <div class="control">
             <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
           </div>
         </div>
         <!-- Full name 2 -->
         <div class="field" v-if="event.is2 || event.is3 || event.is4">
-          <label class="label">Full Name of Participant 2</label>
+          <label class="label">Name of Participant 2</label>
           <div class="control">
             <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
           </div>
         </div>        
         <div class="field" v-if="event.is3 || event.is4">
-           <label class="label">Full Name of Participant 3</label>
+           <label class="label">Name of Participant 3</label>
           <div class="control">
             <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
           </div>
         </div>
         <div class="field" v-if="event.is4">
-           <label class="label">Full Name of Participant 4</label>
+           <label class="label">Name of Participant 4</label>
           <div class="control">
             <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
           </div>
@@ -116,8 +116,8 @@
         <div class="field">
           <div class="control">
             <label class="checkbox">
-              <input type="checkbox" v-model="accepted">
-              Non-school participant
+              <input type="checkbox" v-model="individual">
+              Non-school participant (for individual entry)
             </label>
           </div>
         </div>
@@ -130,6 +130,7 @@
             </label>
           </div>
         </div>
+        <p v-if="event.is3 || event.is4 ||event.is2">*Please fill another form to submit registration for another group.</p>
         <!-- submit -->
         <div class="field">
           <div class="control">

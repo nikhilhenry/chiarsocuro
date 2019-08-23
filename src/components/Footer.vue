@@ -28,6 +28,8 @@
         <p>
           <strong>Built </strong>by <a href="https://nikhilhenry.github.io">Nikhil Henry</a>
           <br>
+          <strong>Competition Logos </strong>by <a href="https://instagram.com/flittttttt">Danah Bamehriz</a>
+          <br>
           <strong>&copy; Chiarsocuro 2019</strong> by Legacy School Bangalore
         </p>
       </div>
