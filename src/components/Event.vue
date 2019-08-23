@@ -39,7 +39,7 @@
 
 <!-- registration modal -->
   <div class="modal" v-bind:class="{'is-active':isRegisterActive}">
-    <Register v-bind:event_title="event.title"/>
+    <Register v-bind:event_title="event.title" v-bind:event="event"/>
     <button class="modal-close is-large" aria-label="close" v-on:click="registerToggle"></button>
   </div>
 </div>

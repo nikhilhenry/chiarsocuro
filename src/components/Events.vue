@@ -44,6 +44,7 @@ export default {
           mat_brought:'Sketch pens, pencils, colour pencils',
           details:'1. Participants will have to create a maximum of an 8 panel comic strip based on the prompt provided 2. The comic can be a single plane, a web strip, or a one pager 3. The comic should represent a cohesive story. Though the ending could be a cliffhanger, the comic CANNOT act as a trailer for the intended story',
           eval_para:'Knowledge of Conventions; Storyline; Relevance; Comprehension',
+          is2: false,
         },
         {
           title:'Culinary Art',
@@ -55,6 +56,7 @@ export default {
           mat_brought:'Sponge cake (Round with a 6 inch diameter), apron, gloves (mandartory) ',
           details:"1. Participant will be provided with the prompt on the day 2. Participants are required to decorate a cake using all the materials provided 3. The materials wasted will be taken into consideration as a judging criteria 4. Participant's cake will be distributed with meals",
           eval_para:'Concept; Relevance; Presentation; Aesthetics; Wastage',
+          is2: false,
         },
         {
           title:'Installation',
@@ -66,6 +68,7 @@ export default {
           mat_brought:'Carton box (max size 2×2×2 fee), relevant materials to aid the creation of the installation',
           details:'1. Participants will make an installation (3D art) in the given time using available materials based on the prompt provided on the day 2. Participant 1 will sketch the design for the installation, and participants 2 & 3 will construct the installation 3. Participant 4 will present and explain the ideaton process and the installation created',
           eval_para:'Concept; Creativity; Relevance; Presentation; Expression',
+          is2: false,
         }
       ],
     events2:[
@@ -79,6 +82,7 @@ export default {
           mat_brought:'NA',
           details:'1. Participants of grades 6-8 will have to listen to the song provided on the day to create their illustation Participants of grades 9-12 will hvae to listen to the song provided on the day to create their illustation. Participants can use the title, a verse, the lyrics, the essence of the song, or even the beat to inspire the illustation. Applications like Autodesk Sketchbook on IOS devices and MediBang or Krita on Windows devices can be used',
           eval_para:'Concept; Relevance; Composition; Style',
+          is2: false,
       },
       {
           title:'Photography',
@@ -90,6 +94,7 @@ export default {
           mat_brought:'DSLR/ Digital Camera (5MP or higher), SD Card, USB drive and cable',
           details:'1. Participant 1 will be required to capture photographs based on the prompt provided on the day of the competition, after which Participant 2 will edit the photograph with relevance to the topic, using Photoshop or Lightroom.One original photograph must be selected by the participants and submitted to be judged.The original photograph must not be altered and must be submitted in JPEG format.The participant must also submit one digitally edited version in JPEG format that will be judged as the final work',
           eval_para:'Concept; Relevance; Composition; Expression',
+          is2: true,
       },
       {
           title:'Sculptures',
@@ -101,6 +106,7 @@ export default {
           mat_brought:'Sculpting tools, other materials required',
           details:'Each participant is given the clay and the prompt. With that they have to create a sculpture on a 1 foot by 1 foot cardboard',
           eval_para:'Concept; Relevance; Style; Technique',
+          is2: false,
       }
     ],
     events3:[
@@ -114,6 +120,7 @@ export default {
           mat_brought:"Participants' choice of medium, materials to aid in product display [Eg: Cardboard boxes]",
           details:'2 participants will be required to design one pair of shoes. Each shoe should compliment each other based on the prompt provided on the day. The third participant will create the product display, logo, and brand name and develop a sales pitch for the shoe',
           eval_para:'Concept; Relevance; Composition; Presentation; Expression',
+          is3:true,
       },
       {
           title:'Sketch Swap',
@@ -125,6 +132,7 @@ export default {
           mat_brought:"Participants' choice of medium",
           details:'1. Participants will have to work as a team to create 1 composition The team has 10 minutes to discuss what they want to create as well as decide the order of the participants. Each participant has 30 minutes to work on the piece, and volunteers or teachers will keep time until the end of the competition',
           eval_para:'Concept; Relevance; Composition; Presentation; Expression',
+          is4:true,
       },
       {
           title:'Team Canvas',
@@ -136,6 +144,7 @@ export default {
           mat_brought:"Participants' choice of medium",
           details:'1. Participants will be provided with a large canvas. 3 of the participants will be required to create a finished piece in any style of their choice. The 4th participant will write a concept note explaining the painting as well as its interpretation based on the prompt provided on the day',
           eval_para:'Concept; Relevance; Composition; Presentation; Expression',
+          is4:true,
       }
     ]
     }

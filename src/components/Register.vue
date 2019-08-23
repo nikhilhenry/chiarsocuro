@@ -21,16 +21,49 @@
             <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
           </div>
         </div>
+        <!-- Full name 2 -->
+        <div class="field" v-if="event.is2 || event.is3 || event.is4">
+          <label class="label">Full Name of Participant 2</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
+          </div>
+        </div>        
+        <div class="field" v-if="event.is3 || event.is4">
+           <label class="label">Full Name of Participant 3</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
+          </div>
+        </div>
+        <div class="field" v-if="event.is4">
+           <label class="label">Full Name of Participant 4</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="eg. David Stone" v-model="student_name">
+          </div>
+        </div>
         <!-- Student Email -->
         <div class="field">
-          <label class="label">Student Email</label>
+          <label class="label">Student Email (optional)</label>
           <div class="control">
             <input class="input" type="email" placeholder="eg. student@example.com" v-model="student_email">
           </div>
         </div>
         <!-- School Grade -->
         <div class="field">
-          <label class="label">School Grade</label>
+          <label class="label">Grade in School</label>
+          <div class="select">
+          <select v-model="student_grade">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          </div>
+        </div>
+        <div class="field" v-if="event.is2">
+          <label class="label">Grade in School of Participant 2</label>
           <div class="select">
           <select v-model="student_grade">
             <option value="6">6</option>
@@ -50,6 +83,13 @@
             <input class="input" type="text" placeholder="eg. Legacy School Bangalore" v-model="school_name">
           </div>
         </div>
+        <!-- Art faculty -->
+        <div class="field">
+          <label class="label">Name of Art Faculty</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="eg. David Stone" v-model="school_name">
+          </div>
+        </div>     
         <!-- School Email -->
         <div class="field">
           <label class="label">School Email</label>
@@ -57,11 +97,28 @@
             <input class="input" type="email" placeholder="eg. school@example.com" v-model="school_email">
           </div>
         </div>
-        <!-- addition information -->
+        <!-- School Contact -->
+        <div class="field">
+          <label class="label">School Contact</label>
+          <div class="control">
+            <input class="input" type="phone" placeholder="eg. 9888888888" v-model="school_email">
+          </div>
+        </div>
+        <!-- addition information
         <div class="field">
           <label class="label">Additional information</label>
           <div class="control">
             <textarea class="textarea is-small" placeholder="Optional information such group or non-school participant " v-model="add_info"></textarea>
+          </div>
+        </div> -->
+
+        <!-- individual registration -->
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" v-model="accepted">
+              Non-school participant
+            </label>
           </div>
         </div>
         <!-- terms and  conditions -->
@@ -93,7 +150,7 @@ import firebase from 'firebase'
 
 export default {
   name:'Register',
-  props:['event_title'],
+  props:['event_title','event'],
   data(){
     return{
       errors:[],
@@ -104,7 +161,6 @@ export default {
       school_email:null,
       add_info:null,
       accepted:false,
-      event:this.event_title,
     }
   },
   methods:{
