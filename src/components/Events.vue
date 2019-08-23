@@ -58,7 +58,7 @@ export default {
           mat_brought:'Sponge cake (Round with a 6 inch diameter), apron, gloves (mandartory) ',
           details:"1. Participant will be provided with the prompt on the day 2. Participants are required to decorate a cake using all the materials provided 3. The materials wasted will be taken into consideration as a judging criteria 4. Participant's cake will be distributed with meals",
           eval_para:'Concept; Relevance; Presentation; Aesthetics; Wastage',
-          is2: false,
+          is2: true,
         },
         {
           title:'Installation',
@@ -70,7 +70,7 @@ export default {
           mat_brought:'Carton box (max size 2×2×2 fee), relevant materials to aid the creation of the installation',
           details:'1. Participants will make an installation (3D art) in the given time using available materials based on the prompt provided on the day 2. Participant 1 will sketch the design for the installation, and participants 2 & 3 will construct the installation 3. Participant 4 will present and explain the ideaton process and the installation created',
           eval_para:'Concept; Creativity; Relevance; Presentation; Expression',
-          is2: false,
+          is4: true,
         }
       ],
     events2:[
