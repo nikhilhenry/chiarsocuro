@@ -12,7 +12,7 @@
   </div>
   <div class="navbar-menu" id="navItems" v-bind:class="{'is-active':isActive}">
     <div class="navbar-end">
-      <a class="navbar-item" href="~../assets/brochure.pdf" download><strong>Download Brochure</strong></a>
+      <a class="navbar-item" href="https://firebasestorage.googleapis.com/v0/b/chiaroscuro19-e746d.appspot.com/o/brochure.pdf?alt=media&token=115eb42f-1689-4410-b632-4ab2140fc4cc" download><strong>Download Brochure</strong></a>
       <a class="navbar-item" v-scroll-to="'#hero'">Home</a>
       <a class="navbar-item" v-scroll-to="'#events'">Events</a>
       <a class="navbar-item" v-on:click="modalToggle">General Guidelines</a>
