@@ -12,8 +12,6 @@
       <div v-if="errors.length">
         <p v-bind:key="error" v-for="error in errors" class="has-background-danger has-text-white has-text-weight-semibold">{{error}}</p>
       </div>
-      <form
-      @submit="submit">
         <!-- Full name -->
         <div class="field">
           <label class="label">Name of participant</label>
@@ -162,10 +160,9 @@
         <!-- submit -->
         <div class="field">
           <div class="control">
-            <input class="button is-success" type="submit" value="Submit">
+            <input class="button is-success" type="submit" v-on:click="submit">
           </div>
-        </div>        
-      </form>
+        </div>
     </div>
     </div>
     </article>
@@ -203,6 +200,7 @@ export default {
   },
   methods:{
     submit:function(){
+      console.log('hi')
       if(this.student_name && this.student_grade && this.school_name && this.school_email && this.accepted){
         const student = {
           student_name:this.student_name,
@@ -220,9 +218,11 @@ export default {
           art_fac:this.art_fac,
           school_contact:this.school_contact
         };
+        console.log(student)
         firebase.firestore().collection(this.event_title).add(student)
-          .then(()=>{
-            this.$router.push('/about')
+        .then(()=>{
+            // this.$router.push('/about')
+            console.log(student)
           })
           // eslint-disable-next-line
           .catch(err=>{
