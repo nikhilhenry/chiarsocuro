@@ -200,7 +200,6 @@ export default {
   },
   methods:{
     submit:function(){
-      console.log('hi')
       if(this.student_name && this.student_grade && this.school_name && this.school_email && this.accepted){
         const student = {
           student_name:this.student_name,
@@ -218,7 +217,6 @@ export default {
           art_fac:this.art_fac,
           school_contact:this.school_contact
         };
-        console.log(student)
         firebase.firestore().collection(this.event_title).add(student)
         .then(()=>{
             // this.$router.push('/about')
