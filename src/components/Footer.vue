@@ -18,7 +18,7 @@
         <ul>
           <li class="subtitle is-5">Events Coordinator: <a href="mailto:events@lsb.edu.in">events@lsb.edu.in</a></li>
           <li class="subtitle is-5">Student Support: <a href="mailto:chiaroscuro@lsb.edu.in">chiaroscuro@lsb.edu.in</a></li>
-          <li class="subtitle is-5">Phone: <a href="tel:+7022292406">+702292406</a></li>
+          <li class="subtitle is-5">Phone: <a href="tel:+7349532444">+7349532444</a></li>
         </ul>
       </div>
       </div>
