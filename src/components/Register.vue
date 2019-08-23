@@ -219,7 +219,7 @@ export default {
         };
         firebase.firestore().collection(this.event_title).add(student)
         .then(()=>{
-            // this.$router.push('/about')
+            this.$router.push('/about')
             console.log(student)
           })
           // eslint-disable-next-line
