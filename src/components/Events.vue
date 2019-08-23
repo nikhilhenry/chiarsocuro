@@ -37,7 +37,7 @@ export default {
         {
           title:'Comic Design',
           image:require('../assets/comic_design.png'),
-          num_particapants:'1 per school',
+          num_participants:'1 per school',
           age_category:'Group 1: Grades 6-8 Group 2: Grades 9-12',
           duration:'2 Hours',
           mat_prov:'A4 size cartridge paper',

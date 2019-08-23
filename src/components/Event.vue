@@ -16,9 +16,14 @@
              <strong class="title">{{event.title}}</strong>
              <br>
            </p>
-           <p class="text has-text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget nullam non nisi est sit. Non blandit massa enim nec dui nunc mattis enim ut. Id diam maecenas ultricies mi eget mauris pharetra.
-           </p>
+           <div class="text has-text-left">
+            <p><strong class="Subtitle">Number of Participants:</strong> {{event.num_participants}}</p>
+            <p><strong class="Subtitle">Grades:</strong> {{event.age_category}}</p>
+            <p><strong class="Subtitle">Duration: </strong>{{event.duration}}</p>
+            <p><strong class="Subtitle">Materials provided: </strong> {{event.mat_prov}}</p>
+            <p><strong class="Subtitle">Materials to brought: </strong> {{event.mat_brought}}</p>
+            <p><strong class="Subtitle">Details: </strong>{{event.details}}</p>
+           </div>
         </div>
         <nav  class="level is-mobile">
         <div class="level-left">
