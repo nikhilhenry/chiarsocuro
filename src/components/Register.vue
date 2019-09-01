@@ -215,7 +215,8 @@ export default {
           school_email:this.school_email,
           add_info:this.add_info,
           art_fac:this.art_fac,
-          school_contact:this.school_contact
+          school_contact:this.school_contact,
+          individual:this.individual,
         };
         firebase.firestore().collection(this.event_title).add(student)
         .then(()=>{
