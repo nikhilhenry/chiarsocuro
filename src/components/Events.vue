@@ -140,7 +140,7 @@ export default {
           title:'Team Canvas',
           image:require('../assets/team_canvas.png'),
           num_participants:'1 team per school (4 participants per team)',
-          age_category:'Grades 9-12',
+          age_category:'Grades 6-8',
           duration:'3 Hours 30 Minutes',
           mat_prov:'Large Canvas (Size: 2.5 feet × 2.5 feet)',
           mat_brought:"Participants' choice of medium",
