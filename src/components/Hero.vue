@@ -22,6 +22,8 @@ export default {
 <style lang="scss" scoped>
 .hero{
   background-image:url('../assets/backdrop.jpg');
+  background-size: cover;
+  background-position: center;
   img{
     max-height: 7rem;
     margin-bottom: 6px;
